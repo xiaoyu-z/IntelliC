@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Contact" representedClassName="ContactObj" syncable="YES"/>
+    <entity name="Group" representedClassName="GroupObj" syncable="YES">
+        <attribute name="gownerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupPwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfMember" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vignette" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="include" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingroup" syncable="YES"/>
+    </entity>
+    <entity name="Ingroup" representedClassName="IngroupObj" syncable="YES">
+        <attribute name="groupId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_email" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Owner" representedClassName="OwnerObj" syncable="YES">
+        <attribute name="defaultEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defaultPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="has" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" syncable="YES"/>
+    </entity>
+    <entity name="Record" representedClassName="RecordObj" syncable="YES">
+        <attribute name="contactPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="0" positionY="63" width="128" height="45"/>
+        <element name="Group" positionX="-18" positionY="54" width="128" height="165"/>
+        <element name="Ingroup" positionX="-9" positionY="90" width="128" height="120"/>
+        <element name="Owner" positionX="-36" positionY="9" width="128" height="135"/>
+        <element name="Record" positionX="-18" positionY="54" width="128" height="90"/>
+    </elements>
+</model>

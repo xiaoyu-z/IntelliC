@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5T4-YV-saO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--group-->
+        <scene sceneID="eMF-uW-fOX">
+            <objects>
+                <viewController id="s44-Pz-ERw" customClass="groupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RIO-fc-s1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBT-DI-olT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HA2-10-nXl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="group" image="tab2.png" selectedImage="tab2.png" id="R8h-XE-SOq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOx-vI-C68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3058.5" y="927.75"/>
+        </scene>
+        <!--me-->
+        <scene sceneID="2Wf-c2-cTV">
+            <objects>
+                <viewController id="1ZG-K4-aHa" customClass="meViewController" customModule="IntelliC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6pr-ts-1PB"/>
+                        <viewControllerLayoutGuide type="bottom" id="OJt-P4-PAg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DBb-7R-MZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kU-L8-AQa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Get Back-up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="377" width="384" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="downClicked:" destination="1ZG-K4-aHa" eventType="touchUpInside" id="XUa-jN-ojH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v05-hP-9Zw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="432" width="384" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="1ZG-K4-aHa" eventType="touchUpInside" id="f1J-zY-ozW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo8-Nx-PXN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Change Password">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="237" width="384" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changePwd:" destination="1ZG-K4-aHa" eventType="touchUpInside" id="4ja-HT-xBz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1u-fv-Xr1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Change Default Information">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="280" width="384" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="defalutMessageClicked:" destination="1ZG-K4-aHa" eventType="touchUpInside" id="1UW-g3-QdM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwL-vu-FF5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Back Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="334" width="384" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="uploadClicked:" destination="1ZG-K4-aHa" eventType="touchUpInside" id="5IC-nc-ufd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianjin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ato-A3-bOq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="280" width="30" height="30"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="I17-pW-aPu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.10588235294117647" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="222"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="update_information.png" translatesAutoresizingMaskIntoConstraints="NO" id="qfA-X0-rNd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="280" width="40" height="40"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_contact.png" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-Gg-eN7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="334" width="40" height="40"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_contact.png" translatesAutoresizingMaskIntoConstraints="NO" id="czV-u9-DmD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="377" width="40" height="40"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modify_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="GMe-gL-ar5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="237" width="40" height="40"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianjin.png" translatesAutoresizingMaskIntoConstraints="NO" id="NKd-3x-yau">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="382" width="30" height="30"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianjin.png" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-jG-BiR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="437" width="30" height="30"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="3BK-JH-ee5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="432" width="40" height="40"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianjin.png" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-sB-BZg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="334" width="30" height="30"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qianjin.png" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-PL-0Pz">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="242" width="30" height="30"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.91764705882352937" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5kU-L8-AQa"/>
+                                <exclude reference="v05-hP-9Zw"/>
+                                <exclude reference="fo8-Nx-PXN"/>
+                                <exclude reference="B1u-fv-Xr1"/>
+                                <exclude reference="VwL-vu-FF5"/>
+                                <exclude reference="ato-A3-bOq"/>
+                                <exclude reference="I17-pW-aPu"/>
+                                <exclude reference="qfA-X0-rNd"/>
+                                <exclude reference="lMQ-Gg-eN7"/>
+                                <exclude reference="czV-u9-DmD"/>
+                                <exclude reference="GMe-gL-ar5"/>
+                                <exclude reference="NKd-3x-yau"/>
+                                <exclude reference="gxd-jG-BiR"/>
+                                <exclude reference="3BK-JH-ee5"/>
+                                <exclude reference="hE2-sB-BZg"/>
+                                <exclude reference="wCV-PL-0Pz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5kU-L8-AQa"/>
+                                <include reference="v05-hP-9Zw"/>
+                                <include reference="fo8-Nx-PXN"/>
+                                <include reference="B1u-fv-Xr1"/>
+                                <include reference="VwL-vu-FF5"/>
+                                <include reference="ato-A3-bOq"/>
+                                <include reference="I17-pW-aPu"/>
+                                <include reference="qfA-X0-rNd"/>
+                                <include reference="lMQ-Gg-eN7"/>
+                                <include reference="czV-u9-DmD"/>
+                                <include reference="GMe-gL-ar5"/>
+                                <include reference="NKd-3x-yau"/>
+                                <include reference="gxd-jG-BiR"/>
+                                <include reference="3BK-JH-ee5"/>
+                                <include reference="hE2-sB-BZg"/>
+                                <include reference="wCV-PL-0Pz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="me" image="tab3.png" selectedImage="tab3.png" id="fPL-bU-S0A"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="changePwd" destination="fo8-Nx-PXN" id="nhd-Yg-z6k"/>
+                        <outlet property="defaultInfo" destination="B1u-fv-Xr1" id="qW8-5R-JX0"/>
+                        <outlet property="download" destination="5kU-L8-AQa" id="pV8-3H-tGY"/>
+                        <outlet property="logout" destination="v05-hP-9Zw" id="uMf-C3-ATE"/>
+                        <outlet property="uploadBtn" destination="VwL-vu-FF5" id="rhd-FB-qJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66W-B8-R5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2317.5" y="670.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YVq-fU-yf1">
+            <objects>
+                <tabBarController storyboardIdentifier="group" id="5T4-YV-saO" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="da6-0Z-i2h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1td-wR-H9T" kind="relationship" relationship="viewControllers" id="bub-OM-5MB"/>
+                        <segue destination="s44-Pz-ERw" kind="relationship" relationship="viewControllers" id="24e-Sa-lJK"/>
+                        <segue destination="1ZG-K4-aHa" kind="relationship" relationship="viewControllers" id="rtG-27-17Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwQ-uW-AhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3483" y="249"/>
+        </scene>
+        <!--contact-->
+        <scene sceneID="5ey-8F-uqA">
+            <objects>
+                <viewController title="contact" id="1td-wR-H9T" customClass="SectionsViewControllerFriends" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1z9-mx-Dul"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKY-5M-kT4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tS3-qb-cTn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="contact" image="tab1.png" selectedImage="tab1.png" id="F10-Jt-O3J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ha0-XY-szU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2733" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down_contact.png" width="50" height="50"/>
+        <image name="log_off.png" width="50" height="50"/>
+        <image name="logo.png" width="400" height="200"/>
+        <image name="modify_password.png" width="50" height="50"/>
+        <image name="qianjin.png" width="25" height="25"/>
+        <image name="tab1.png" width="30" height="30"/>
+        <image name="tab2.png" width="30" height="30"/>
+        <image name="tab3.png" width="30" height="30"/>
+        <image name="update_information.png" width="50" height="50"/>
+        <image name="upload_contact.png" width="50" height="50"/>
+    </resources>
+</document>
